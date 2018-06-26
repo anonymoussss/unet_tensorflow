@@ -1,0 +1,1344 @@
+node4
+/usr/local/lib/python2.7/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From unet.py:60: set_name_reuse (from tensorlayer.layers.core) is deprecated and will be removed after 2018-06-30.
+Instructions for updating:
+TensorLayer relies on TensorFlow to check name reusing.
+[TL] this method is DEPRECATED and has no effect, please remove it from your code.
+[TL] InputLayer  model/input_layer: (3, 512, 512, 1)
+[TL] Conv2dLayer model/conv_1: shape:(3, 3, 1, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN1: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_2: shape:(3, 3, 64, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN2: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] PoolLayer   model/maxpool_1: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_3: shape:(3, 3, 64, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN3: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_4: shape:(3, 3, 128, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN4: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] PoolLayer   model/maxpool_2: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_5: shape:(3, 3, 128, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN5: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_6: shape:(3, 3, 256, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN6: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] PoolLayer   model/maxpool_3: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_7: shape:(3, 3, 256, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN7: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_8: shape:(3, 3, 512, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN8: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] PoolLayer   model/maxpool_4: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_9: shape:(3, 3, 512, 1024) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN9: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_10: shape:(3, 3, 1024, 1024) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN10: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] UpSampling2dLayer upsample2d_1: is_scale:True size:[64, 64] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_11: shape:(3, 3, 1024, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN11: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] ConcatLayer model/concat_1: axis: 3
+[TL] Conv2dLayer model/conv_12: shape:(3, 3, 1024, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN12: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_13: shape:(3, 3, 512, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN13: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] UpSampling2dLayer upsample2d_2: is_scale:True size:[128, 128] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_14: shape:(3, 3, 512, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/B14: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] ConcatLayer model/concat_2: axis: 3
+[TL] Conv2dLayer model/conv_15: shape:(3, 3, 512, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN15: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_16: shape:(3, 3, 256, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN16: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] UpSampling2dLayer upsample2d_3: is_scale:True size:[256, 256] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_17: shape:(3, 3, 256, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN17: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] ConcatLayer model/concat_3: axis: 3
+[TL] Conv2dLayer model/conv_18: shape:(3, 3, 256, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN18: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_19: shape:(3, 3, 128, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN19: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] UpSampling2dLayer upsample2d_4: is_scale:True size:[512, 512] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_20: shape:(3, 3, 128, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN20: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] ConcatLayer model/concat_4: axis: 3
+[TL] Conv2dLayer model/conv_21: shape:(3, 3, 128, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN21: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_22: shape:(3, 3, 64, 32) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN22: decay:0.900000 epsilon:0.000010 act:relu is_train:True
+[TL] Conv2dLayer model/conv_23: shape:(3, 3, 32, 2) strides:(1, 1, 1, 1) pad:SAME act:identity
+WARNING:tensorflow:From unet.py:152: calling argmax (from tensorflow.python.ops.math_ops) with dimension is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+[TL]   [*] geting variables with relu/W
+[TL] this method is DEPRECATED and has no effect, please remove it from your code.
+[TL] InputLayer  model/input_layer: (3, 512, 512, 1)
+[TL] Conv2dLayer model/conv_1: shape:(3, 3, 1, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN1: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_2: shape:(3, 3, 64, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN2: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] PoolLayer   model/maxpool_1: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_3: shape:(3, 3, 64, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN3: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_4: shape:(3, 3, 128, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN4: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] PoolLayer   model/maxpool_2: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_5: shape:(3, 3, 128, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN5: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_6: shape:(3, 3, 256, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN6: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] PoolLayer   model/maxpool_3: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_7: shape:(3, 3, 256, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN7: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_8: shape:(3, 3, 512, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN8: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] PoolLayer   model/maxpool_4: ksize:[1, 2, 2, 1] strides:[1, 2, 2, 1] padding:SAME pool:max_pool
+[TL] Conv2dLayer model/conv_9: shape:(3, 3, 512, 1024) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN9: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_10: shape:(3, 3, 1024, 1024) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN10: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] UpSampling2dLayer upsample2d_1: is_scale:True size:[64, 64] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_11: shape:(3, 3, 1024, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN11: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] ConcatLayer model/concat_1: axis: 3
+[TL] Conv2dLayer model/conv_12: shape:(3, 3, 1024, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN12: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_13: shape:(3, 3, 512, 512) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN13: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] UpSampling2dLayer upsample2d_2: is_scale:True size:[128, 128] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_14: shape:(3, 3, 512, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/B14: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] ConcatLayer model/concat_2: axis: 3
+[TL] Conv2dLayer model/conv_15: shape:(3, 3, 512, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN15: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_16: shape:(3, 3, 256, 256) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN16: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] UpSampling2dLayer upsample2d_3: is_scale:True size:[256, 256] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_17: shape:(3, 3, 256, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN17: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] ConcatLayer model/concat_3: axis: 3
+[TL] Conv2dLayer model/conv_18: shape:(3, 3, 256, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN18: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_19: shape:(3, 3, 128, 128) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN19: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] UpSampling2dLayer upsample2d_4: is_scale:True size:[512, 512] method:0 align_corners:False
+[TL] Conv2dLayer model/conv_20: shape:(3, 3, 128, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN20: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] ConcatLayer model/concat_4: axis: 3
+[TL] Conv2dLayer model/conv_21: shape:(3, 3, 128, 64) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN21: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_22: shape:(3, 3, 64, 32) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL] BatchNormLayer model/BN22: decay:0.900000 epsilon:0.000010 act:relu is_train:False
+[TL] Conv2dLayer model/conv_23: shape:(3, 3, 32, 2) strides:(1, 1, 1, 1) pad:SAME act:identity
+[TL]   [*] geting variables with relu/W
+2018-06-03 12:36:52.860305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1208] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:03:00.0
+totalMemory: 11.90GiB freeMemory: 11.74GiB
+2018-06-03 12:36:52.860354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1308] Adding visible gpu devices: 0
+2018-06-03 12:36:53.187279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:989] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11366 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:03:00.0, compute capability: 6.1)
+Setting up summary op...
+Setting up Saver...
+10 epoches 0 took 26.842139s
+   train loss: 0.464420
+   train auc: 0.510651
+   train aupr: 0.023358
+the 0 epoch , the model has been saved successfully
+10 epoches 9 took 18.237393s
+   train loss: 0.084630
+   train auc: 0.495004
+   train aupr: 0.014176
+10 epoches 19 took 15.634671s
+   train loss: 0.051430
+   train auc: 0.504912
+   train aupr: 0.017222
+10 epoches 29 took 17.138337s
+   train loss: 0.063225
+   train auc: 0.502593
+   train aupr: 0.012487
+10 epoches 39 took 16.353028s
+   train loss: 0.052263
+   train auc: 0.511852
+   train aupr: 0.010975
+10 epoches 49 took 17.331009s
+   train loss: 0.043115
+   train auc: 0.489731
+   train aupr: 0.021959
+10 epoches 59 took 16.566662s
+   train loss: 0.046529
+   train auc: 0.492019
+   train aupr: 0.015821
+10 epoches 69 took 16.743123s
+   train loss: 0.028204
+   train auc: 0.503186
+   train aupr: 0.012382
+10 epoches 79 took 16.755629s
+   train loss: 0.029200
+   train auc: 0.461224
+   train aupr: 0.014521
+10 epoches 89 took 17.345675s
+   train loss: 0.039937
+   train auc: 0.499251
+   train aupr: 0.018472
+10 epoches 99 took 16.127421s
+   train loss: 0.038734
+   train auc: 0.525760
+   train aupr: 0.016302
+10 epoches 109 took 16.251459s
+   train loss: 0.032852
+   train auc: 0.512762
+   train aupr: 0.023958
+10 epoches 119 took 16.429692s
+   train loss: 0.033578
+   train auc: 0.479673
+   train aupr: 0.020116
+10 epoches 129 took 17.100976s
+   train loss: 0.025768
+   train auc: 0.480969
+   train aupr: 0.016231
+10 epoches 139 took 17.421120s
+   train loss: 0.025137
+   train auc: 0.488708
+   train aupr: 0.019566
+10 epoches 149 took 17.814512s
+   train loss: 0.022952
+   train auc: 0.518180
+   train aupr: 0.013836
+10 epoches 159 took 15.969820s
+   train loss: 0.030751
+   train auc: 0.466128
+   train aupr: 0.024555
+10 epoches 169 took 17.120909s
+   train loss: 0.020499
+   train auc: 0.502407
+   train aupr: 0.006121
+10 epoches 179 took 16.521004s
+   train loss: 0.020012
+   train auc: 0.529329
+   train aupr: 0.021576
+10 epoches 189 took 17.138616s
+   train loss: 0.018467
+   train auc: 0.488880
+   train aupr: 0.020828
+10 epoches 199 took 16.194717s
+   train loss: 0.016712
+   train auc: 0.512133
+   train aupr: 0.017209
+10 epoches 209 took 17.024194s
+   train loss: 0.024407
+   train auc: 0.493011
+   train aupr: 0.021876
+10 epoches 219 took 16.859205s
+   train loss: 0.019078
+   train auc: 0.464011
+   train aupr: 0.029636
+10 epoches 229 took 16.154691s
+   train loss: 0.016993
+   train auc: 0.519033
+   train aupr: 0.033119
+10 epoches 239 took 16.272008s
+   train loss: 0.013324
+   train auc: 0.490065
+   train aupr: 0.016141
+10 epoches 249 took 16.809729s
+   train loss: 0.021250
+   train auc: 0.512430
+   train aupr: 0.009631
+10 epoches 259 took 16.179862s
+   train loss: 0.014893
+   train auc: 0.523569
+   train aupr: 0.014926
+10 epoches 269 took 16.705827s
+   train loss: 0.025561
+   train auc: 0.532168
+   train aupr: 0.020039
+10 epoches 279 took 16.991478s
+   train loss: 0.026714
+   train auc: 0.504754
+   train aupr: 0.022933
+10 epoches 289 took 15.924596s
+   train loss: 0.015588
+   train auc: 0.521995
+   train aupr: 0.021936
+10 epoches 299 took 16.514286s
+   train loss: 0.011282
+   train auc: 0.494066
+   train aupr: 0.021084
+10 epoches 309 took 16.312994s
+   train loss: 0.016479
+   train auc: 0.503747
+   train aupr: 0.020029
+10 epoches 319 took 15.893573s
+   train loss: 0.017086
+   train auc: 0.548444
+   train aupr: 0.013866
+10 epoches 329 took 16.453445s
+   train loss: 0.014858
+   train auc: 0.497776
+   train aupr: 0.013665
+10 epoches 339 took 17.109486s
+   train loss: 0.017266
+   train auc: 0.486372
+   train aupr: 0.016335
+10 epoches 349 took 16.317981s
+   train loss: 0.031738
+   train auc: 0.481666
+   train aupr: 0.017005
+10 epoches 359 took 16.062575s
+   train loss: 0.017486
+   train auc: 0.527881
+   train aupr: 0.022505
+10 epoches 369 took 16.327692s
+   train loss: 0.016549
+   train auc: 0.520003
+   train aupr: 0.021243
+10 epoches 379 took 16.679982s
+   train loss: 0.010772
+   train auc: 0.565845
+   train aupr: 0.012851
+10 epoches 389 took 16.383258s
+   train loss: 0.011247
+   train auc: 0.504011
+   train aupr: 0.023214
+10 epoches 399 took 15.929261s
+   train loss: 0.008185
+   train auc: 0.481803
+   train aupr: 0.008798
+10 epoches 409 took 16.264887s
+   train loss: 0.014214
+   train auc: 0.472550
+   train aupr: 0.017031
+10 epoches 419 took 15.901621s
+   train loss: 0.011475
+   train auc: 0.523997
+   train aupr: 0.028678
+10 epoches 429 took 16.414167s
+   train loss: 0.010425
+   train auc: 0.513507
+   train aupr: 0.026450
+10 epoches 439 took 16.270865s
+   train loss: 0.011088
+   train auc: 0.526946
+   train aupr: 0.017580
+10 epoches 449 took 16.169806s
+   train loss: 0.007832
+   train auc: 0.509463
+   train aupr: 0.012607
+10 epoches 459 took 16.337010s
+   train loss: 0.008655
+   train auc: 0.471204
+   train aupr: 0.021868
+10 epoches 469 took 16.291456s
+   train loss: 0.008932
+   train auc: 0.514077
+   train aupr: 0.019599
+10 epoches 479 took 16.513985s
+   train loss: 0.007402
+   train auc: 0.504624
+   train aupr: 0.017991
+10 epoches 489 took 16.589849s
+   train loss: 0.037046
+   train auc: 0.498010
+   train aupr: 0.022926
+10 epoches 499 took 16.311930s
+   train loss: 0.009532
+   train auc: 0.487827
+   train aupr: 0.022051
+10 epoches 509 took 16.151172s
+   train loss: 0.011224
+   train auc: 0.472332
+   train aupr: 0.016183
+10 epoches 519 took 16.696496s
+   train loss: 0.008559
+   train auc: 0.498858
+   train aupr: 0.018260
+10 epoches 529 took 16.560576s
+   train loss: 0.005824
+   train auc: 0.547576
+   train aupr: 0.025631
+10 epoches 539 took 16.305476s
+   train loss: 0.008922
+   train auc: 0.479251
+   train aupr: 0.026621
+10 epoches 549 took 16.533552s
+   train loss: 0.005270
+   train auc: 0.508015
+   train aupr: 0.018733
+10 epoches 559 took 15.896990s
+   train loss: 0.008305
+   train auc: 0.498199
+   train aupr: 0.015650
+10 epoches 569 took 16.437182s
+   train loss: 0.006413
+   train auc: 0.509741
+   train aupr: 0.029598
+10 epoches 579 took 16.622625s
+   train loss: 0.006483
+   train auc: 0.525779
+   train aupr: 0.016104
+10 epoches 589 took 16.380527s
+   train loss: 0.007890
+   train auc: 0.483252
+   train aupr: 0.013295
+10 epoches 599 took 16.267044s
+   train loss: 0.005299
+   train auc: 0.499684
+   train aupr: 0.018957
+10 epoches 609 took 15.834357s
+   train loss: 0.008217
+   train auc: 0.506686
+   train aupr: 0.010056
+10 epoches 619 took 16.677435s
+   train loss: 0.010247
+   train auc: 0.475214
+   train aupr: 0.012855
+10 epoches 629 took 16.595479s
+   train loss: 0.005104
+   train auc: 0.491831
+   train aupr: 0.014896
+10 epoches 639 took 16.206997s
+   train loss: 0.009477
+   train auc: 0.497977
+   train aupr: 0.021060
+10 epoches 649 took 16.341961s
+   train loss: 0.006367
+   train auc: 0.498303
+   train aupr: 0.014226
+10 epoches 659 took 16.524473s
+   train loss: 0.006611
+   train auc: 0.488161
+   train aupr: 0.010274
+10 epoches 669 took 15.899508s
+   train loss: 0.028188
+   train auc: 0.476233
+   train aupr: 0.011658
+10 epoches 679 took 16.392778s
+   train loss: 0.006931
+   train auc: 0.487236
+   train aupr: 0.016321
+10 epoches 689 took 16.371112s
+   train loss: 0.006758
+   train auc: 0.499322
+   train aupr: 0.021118
+10 epoches 699 took 16.675898s
+   train loss: 0.004606
+   train auc: 0.489729
+   train aupr: 0.012454
+10 epoches 709 took 16.339517s
+   train loss: 0.006083
+   train auc: 0.517660
+   train aupr: 0.033112
+10 epoches 719 took 16.433796s
+   train loss: 0.006149
+   train auc: 0.508490
+   train aupr: 0.023062
+10 epoches 729 took 16.061732s
+   train loss: 0.005680
+   train auc: 0.526011
+   train aupr: 0.012391
+10 epoches 739 took 16.527042s
+   train loss: 0.003493
+   train auc: 0.506362
+   train aupr: 0.039002
+10 epoches 749 took 16.103536s
+   train loss: 0.005494
+   train auc: 0.506278
+   train aupr: 0.012467
+10 epoches 759 took 16.572924s
+   train loss: 0.006498
+   train auc: 0.533634
+   train aupr: 0.025151
+10 epoches 769 took 16.642093s
+   train loss: 0.003452
+   train auc: 0.510128
+   train aupr: 0.015930
+10 epoches 779 took 16.400726s
+   train loss: 0.006204
+   train auc: 0.510048
+   train aupr: 0.008937
+10 epoches 789 took 15.824025s
+   train loss: 0.005405
+   train auc: 0.488284
+   train aupr: 0.020952
+10 epoches 799 took 16.346841s
+   train loss: 0.007410
+   train auc: 0.518091
+   train aupr: 0.015290
+10 epoches 809 took 15.966080s
+   train loss: 0.004319
+   train auc: 0.508375
+   train aupr: 0.027858
+10 epoches 819 took 16.371643s
+   train loss: 0.003800
+   train auc: 0.463607
+   train aupr: 0.020051
+10 epoches 829 took 16.397613s
+   train loss: 0.005923
+   train auc: 0.495412
+   train aupr: 0.008552
+10 epoches 839 took 16.414304s
+   train loss: 0.006058
+   train auc: 0.518317
+   train aupr: 0.012048
+10 epoches 849 took 16.287716s
+   train loss: 0.003855
+   train auc: 0.515525
+   train aupr: 0.018748
+10 epoches 859 took 16.040857s
+   train loss: 0.005100
+   train auc: 0.535018
+   train aupr: 0.033344
+10 epoches 869 took 16.276860s
+   train loss: 0.004109
+   train auc: 0.498266
+   train aupr: 0.021738
+10 epoches 879 took 16.393512s
+   train loss: 0.003561
+   train auc: 0.496707
+   train aupr: 0.027679
+10 epoches 889 took 16.438639s
+   train loss: 0.004015
+   train auc: 0.534302
+   train aupr: 0.023201
+10 epoches 899 took 16.078191s
+   train loss: 0.003015
+   train auc: 0.546730
+   train aupr: 0.023592
+10 epoches 909 took 15.845773s
+   train loss: 0.020960
+   train auc: 0.530907
+   train aupr: 0.013641
+10 epoches 919 took 16.447748s
+   train loss: 0.009726
+   train auc: 0.484928
+   train aupr: 0.014680
+10 epoches 929 took 16.135863s
+   train loss: 0.004862
+   train auc: 0.529256
+   train aupr: 0.030792
+10 epoches 939 took 16.852053s
+   train loss: 0.003264
+   train auc: 0.505457
+   train aupr: 0.022275
+10 epoches 949 took 15.912723s
+   train loss: 0.003997
+   train auc: 0.507588
+   train aupr: 0.013559
+10 epoches 959 took 16.362982s
+   train loss: 0.003246
+   train auc: 0.520386
+   train aupr: 0.017790
+10 epoches 969 took 16.920370s
+   train loss: 0.003625
+   train auc: 0.485509
+   train aupr: 0.009503
+10 epoches 979 took 16.117643s
+   train loss: 0.002643
+   train auc: 0.501444
+   train aupr: 0.017449
+10 epoches 989 took 16.190318s
+   train loss: 0.003312
+   train auc: 0.491347
+   train aupr: 0.008556
+10 epoches 999 took 16.450069s
+   train loss: 0.003869
+   train auc: 0.481581
+   train aupr: 0.016602
+10 epoches 1009 took 16.331120s
+   train loss: 0.003399
+   train auc: 0.492178
+   train aupr: 0.014371
+10 epoches 1019 took 16.653600s
+   train loss: 0.003314
+   train auc: 0.502962
+   train aupr: 0.016567
+10 epoches 1029 took 16.322279s
+   train loss: 0.003766
+   train auc: 0.496737
+   train aupr: 0.021182
+10 epoches 1039 took 16.157452s
+   train loss: 0.002731
+   train auc: 0.542370
+   train aupr: 0.019829
+10 epoches 1049 took 16.345177s
+   train loss: 0.002946
+   train auc: 0.521848
+   train aupr: 0.023140
+10 epoches 1059 took 16.295296s
+   train loss: 0.003758
+   train auc: 0.508306
+   train aupr: 0.014233
+10 epoches 1069 took 16.465055s
+   train loss: 0.003976
+   train auc: 0.525018
+   train aupr: 0.019515
+10 epoches 1079 took 16.349902s
+   train loss: 0.003228
+   train auc: 0.487786
+   train aupr: 0.020429
+10 epoches 1089 took 16.329844s
+   train loss: 0.004250
+   train auc: 0.494367
+   train aupr: 0.019390
+10 epoches 1099 took 16.079996s
+   train loss: 0.004438
+   train auc: 0.513613
+   train aupr: 0.018531
+10 epoches 1109 took 16.488235s
+   train loss: 0.002558
+   train auc: 0.515288
+   train aupr: 0.019795
+10 epoches 1119 took 16.184375s
+   train loss: 0.003221
+   train auc: 0.522325
+   train aupr: 0.032019
+10 epoches 1129 took 16.805376s
+   train loss: 0.002979
+   train auc: 0.501538
+   train aupr: 0.011095
+10 epoches 1139 took 16.666802s
+   train loss: 0.003198
+   train auc: 0.488935
+   train aupr: 0.014258
+10 epoches 1149 took 16.443476s
+   train loss: 0.003661
+   train auc: 0.489385
+   train aupr: 0.020594
+10 epoches 1159 took 16.380246s
+   train loss: 0.002963
+   train auc: 0.515888
+   train aupr: 0.018905
+10 epoches 1169 took 16.352273s
+   train loss: 0.003350
+   train auc: 0.522549
+   train aupr: 0.014937
+10 epoches 1179 took 16.375489s
+   train loss: 0.003448
+   train auc: 0.520263
+   train aupr: 0.013351
+10 epoches 1189 took 16.177164s
+   train loss: 0.002659
+   train auc: 0.490014
+   train aupr: 0.022476
+10 epoches 1199 took 16.652339s
+   train loss: 0.002686
+   train auc: 0.502990
+   train aupr: 0.016446
+10 epoches 1209 took 16.417119s
+   train loss: 0.002373
+   train auc: 0.502586
+   train aupr: 0.030957
+10 epoches 1219 took 16.311859s
+   train loss: 0.010129
+   train auc: 0.493473
+   train aupr: 0.010762
+10 epoches 1229 took 15.964473s
+   train loss: 0.003832
+   train auc: 0.486355
+   train aupr: 0.007297
+10 epoches 1239 took 16.180170s
+   train loss: 0.004102
+   train auc: 0.510754
+   train aupr: 0.014671
+10 epoches 1249 took 16.116664s
+   train loss: 0.002183
+   train auc: 0.501318
+   train aupr: 0.022800
+10 epoches 1259 took 15.979482s
+   train loss: 0.001819
+   train auc: 0.481912
+   train aupr: 0.016510
+10 epoches 1269 took 16.240699s
+   train loss: 0.002295
+   train auc: 0.492540
+   train aupr: 0.015037
+10 epoches 1279 took 16.562108s
+   train loss: 0.001932
+   train auc: 0.516059
+   train aupr: 0.017656
+10 epoches 1289 took 16.564230s
+   train loss: 0.002577
+   train auc: 0.518802
+   train aupr: 0.012695
+10 epoches 1299 took 15.963558s
+   train loss: 0.002277
+   train auc: 0.524900
+   train aupr: 0.017272
+10 epoches 1309 took 16.675828s
+   train loss: 0.002765
+   train auc: 0.491321
+   train aupr: 0.020129
+10 epoches 1319 took 16.292445s
+   train loss: 0.001888
+   train auc: 0.498514
+   train aupr: 0.018669
+10 epoches 1329 took 16.285132s
+   train loss: 0.001638
+   train auc: 0.504328
+   train aupr: 0.023830
+10 epoches 1339 took 16.776644s
+   train loss: 0.002922
+   train auc: 0.494393
+   train aupr: 0.008277
+10 epoches 1349 took 16.723413s
+   train loss: 0.003006
+   train auc: 0.509649
+   train aupr: 0.019839
+10 epoches 1359 took 16.172984s
+   train loss: 0.002466
+   train auc: 0.509040
+   train aupr: 0.020313
+10 epoches 1369 took 16.059091s
+   train loss: 0.002138
+   train auc: 0.495336
+   train aupr: 0.011574
+10 epoches 1379 took 16.399062s
+   train loss: 0.001790
+   train auc: 0.523457
+   train aupr: 0.018200
+10 epoches 1389 took 17.236875s
+   train loss: 0.002440
+   train auc: 0.516195
+   train aupr: 0.015614
+10 epoches 1399 took 16.857172s
+   train loss: 0.002543
+   train auc: 0.534176
+   train aupr: 0.015265
+10 epoches 1409 took 16.762862s
+   train loss: 0.002220
+   train auc: 0.503826
+   train aupr: 0.024007
+10 epoches 1419 took 16.282037s
+   train loss: 0.002470
+   train auc: 0.497991
+   train aupr: 0.027432
+10 epoches 1429 took 16.674114s
+   train loss: 0.002555
+   train auc: 0.491091
+   train aupr: 0.016357
+10 epoches 1439 took 16.945732s
+   train loss: 0.002015
+   train auc: 0.509953
+   train aupr: 0.042017
+10 epoches 1449 took 16.354092s
+   train loss: 0.001977
+   train auc: 0.491355
+   train aupr: 0.035686
+10 epoches 1459 took 16.278476s
+   train loss: 0.003208
+   train auc: 0.516581
+   train aupr: 0.019262
+10 epoches 1469 took 16.687747s
+   train loss: 0.001728
+   train auc: 0.485775
+   train aupr: 0.021510
+10 epoches 1479 took 16.913247s
+   train loss: 0.001850
+   train auc: 0.502547
+   train aupr: 0.019366
+10 epoches 1489 took 17.176513s
+   train loss: 0.001647
+   train auc: 0.484099
+   train aupr: 0.017779
+10 epoches 1499 took 16.946660s
+   train loss: 0.002009
+   train auc: 0.501094
+   train aupr: 0.022417
+the 1500 epoch , the model has been saved successfully
+10 epoches 1509 took 16.538976s
+   train loss: 0.001670
+   train auc: 0.500234
+   train aupr: 0.018412
+10 epoches 1519 took 16.706506s
+   train loss: 0.001121
+   train auc: 0.479401
+   train aupr: 0.017324
+10 epoches 1529 took 16.695950s
+   train loss: 0.018389
+   train auc: 0.521583
+   train aupr: 0.014006
+10 epoches 1539 took 18.887659s
+   train loss: 0.004015
+   train auc: 0.504394
+   train aupr: 0.029560
+10 epoches 1549 took 17.972297s
+   train loss: 0.002980
+   train auc: 0.494142
+   train aupr: 0.025826
+10 epoches 1559 took 19.404273s
+   train loss: 0.002094
+   train auc: 0.523720
+   train aupr: 0.023585
+10 epoches 1569 took 19.899817s
+   train loss: 0.001471
+   train auc: 0.524970
+   train aupr: 0.036692
+10 epoches 1579 took 17.376079s
+   train loss: 0.002623
+   train auc: 0.496207
+   train aupr: 0.023863
+10 epoches 1589 took 19.396644s
+   train loss: 0.001732
+   train auc: 0.509057
+   train aupr: 0.025853
+10 epoches 1599 took 20.154074s
+   train loss: 0.001694
+   train auc: 0.523061
+   train aupr: 0.011734
+10 epoches 1609 took 18.534417s
+   train loss: 0.001552
+   train auc: 0.484746
+   train aupr: 0.019732
+10 epoches 1619 took 17.903871s
+   train loss: 0.001660
+   train auc: 0.548460
+   train aupr: 0.017136
+10 epoches 1629 took 18.461576s
+   train loss: 0.002202
+   train auc: 0.513187
+   train aupr: 0.026863
+10 epoches 1639 took 16.827744s
+   train loss: 0.001106
+   train auc: 0.490153
+   train aupr: 0.023241
+10 epoches 1649 took 16.702565s
+   train loss: 0.001137
+   train auc: 0.501012
+   train aupr: 0.014413
+10 epoches 1659 took 16.513070s
+   train loss: 0.001142
+   train auc: 0.461935
+   train aupr: 0.008759
+10 epoches 1669 took 18.995835s
+   train loss: 0.000781
+   train auc: 0.494974
+   train aupr: 0.023280
+10 epoches 1679 took 18.217376s
+   train loss: 0.001009
+   train auc: 0.529573
+   train aupr: 0.017768
+10 epoches 1689 took 19.961095s
+   train loss: 0.001328
+   train auc: 0.518620
+   train aupr: 0.020157
+10 epoches 1699 took 17.196872s
+   train loss: 0.001902
+   train auc: 0.493369
+   train aupr: 0.026862
+10 epoches 1709 took 19.274782s
+   train loss: 0.001098
+   train auc: 0.478065
+   train aupr: 0.014451
+10 epoches 1719 took 17.908637s
+   train loss: 0.001692
+   train auc: 0.480177
+   train aupr: 0.017325
+10 epoches 1729 took 19.478941s
+   train loss: 0.002161
+   train auc: 0.505402
+   train aupr: 0.021734
+10 epoches 1739 took 17.591107s
+   train loss: 0.001649
+   train auc: 0.503797
+   train aupr: 0.014669
+10 epoches 1749 took 20.595261s
+   train loss: 0.001215
+   train auc: 0.489905
+   train aupr: 0.022586
+10 epoches 1759 took 17.672855s
+   train loss: 0.001179
+   train auc: 0.485944
+   train aupr: 0.010669
+10 epoches 1769 took 18.451382s
+   train loss: 0.001652
+   train auc: 0.502074
+   train aupr: 0.014436
+10 epoches 1779 took 18.998717s
+   train loss: 0.001781
+   train auc: 0.511025
+   train aupr: 0.017010
+10 epoches 1789 took 19.800654s
+   train loss: 0.001627
+   train auc: 0.512957
+   train aupr: 0.006348
+10 epoches 1799 took 17.374080s
+   train loss: 0.001607
+   train auc: 0.490562
+   train aupr: 0.019831
+10 epoches 1809 took 19.888161s
+   train loss: 0.001805
+   train auc: 0.504769
+   train aupr: 0.019947
+10 epoches 1819 took 17.117454s
+   train loss: 0.002043
+   train auc: 0.490463
+   train aupr: 0.020807
+10 epoches 1829 took 17.197487s
+   train loss: 0.001120
+   train auc: 0.508537
+   train aupr: 0.034228
+10 epoches 1839 took 18.872770s
+   train loss: 0.002322
+   train auc: 0.529682
+   train aupr: 0.030168
+10 epoches 1849 took 19.042444s
+   train loss: 0.001230
+   train auc: 0.502486
+   train aupr: 0.020588
+10 epoches 1859 took 16.811205s
+   train loss: 0.001774
+   train auc: 0.513907
+   train aupr: 0.011974
+10 epoches 1869 took 18.192647s
+   train loss: 0.001661
+   train auc: 0.477059
+   train aupr: 0.014236
+10 epoches 1879 took 19.299012s
+   train loss: 0.001375
+   train auc: 0.494449
+   train aupr: 0.010824
+10 epoches 1889 took 19.252159s
+   train loss: 0.001348
+   train auc: 0.503308
+   train aupr: 0.014881
+10 epoches 1899 took 17.094671s
+   train loss: 0.000904
+   train auc: 0.512388
+   train aupr: 0.028222
+10 epoches 1909 took 19.198635s
+   train loss: 0.001452
+   train auc: 0.504117
+   train aupr: 0.019844
+10 epoches 1919 took 18.876050s
+   train loss: 0.002068
+   train auc: 0.489603
+   train aupr: 0.020927
+10 epoches 1929 took 20.013396s
+   train loss: 0.001205
+   train auc: 0.496233
+   train aupr: 0.024528
+10 epoches 1939 took 18.078748s
+   train loss: 0.001242
+   train auc: 0.510795
+   train aupr: 0.016429
+10 epoches 1949 took 18.772190s
+   train loss: 0.001311
+   train auc: 0.489443
+   train aupr: 0.014153
+10 epoches 1959 took 18.888865s
+   train loss: 0.001016
+   train auc: 0.510059
+   train aupr: 0.027657
+10 epoches 1969 took 16.591401s
+   train loss: 0.012201
+   train auc: 0.536756
+   train aupr: 0.021466
+10 epoches 1979 took 16.956625s
+   train loss: 0.003585
+   train auc: 0.484685
+   train aupr: 0.017058
+10 epoches 1989 took 16.595518s
+   train loss: 0.002722
+   train auc: 0.521083
+   train aupr: 0.016101
+10 epoches 1999 took 16.336556s
+   train loss: 0.002131
+   train auc: 0.502721
+   train aupr: 0.022289
+10 epoches 2009 took 16.837302s
+   train loss: 0.001416
+   train auc: 0.510837
+   train aupr: 0.014048
+10 epoches 2019 took 16.956586s
+   train loss: 0.001648
+   train auc: 0.508532
+   train aupr: 0.018388
+10 epoches 2029 took 17.253794s
+   train loss: 0.001356
+   train auc: 0.493436
+   train aupr: 0.027738
+10 epoches 2039 took 16.737965s
+   train loss: 0.001211
+   train auc: 0.490084
+   train aupr: 0.011528
+10 epoches 2049 took 17.061077s
+   train loss: 0.001083
+   train auc: 0.474107
+   train aupr: 0.022382
+10 epoches 2059 took 16.772021s
+   train loss: 0.001323
+   train auc: 0.504899
+   train aupr: 0.022332
+10 epoches 2069 took 16.470511s
+   train loss: 0.001043
+   train auc: 0.497733
+   train aupr: 0.031526
+10 epoches 2079 took 16.634301s
+   train loss: 0.000885
+   train auc: 0.507086
+   train aupr: 0.019673
+10 epoches 2089 took 16.871861s
+   train loss: 0.000851
+   train auc: 0.507672
+   train aupr: 0.022126
+10 epoches 2099 took 16.783549s
+   train loss: 0.001352
+   train auc: 0.516632
+   train aupr: 0.017866
+10 epoches 2109 took 17.384981s
+   train loss: 0.000834
+   train auc: 0.505339
+   train aupr: 0.007602
+10 epoches 2119 took 17.032552s
+   train loss: 0.004744
+   train auc: 0.506101
+   train aupr: 0.020065
+10 epoches 2129 took 17.339793s
+   train loss: 0.004513
+   train auc: 0.492696
+   train aupr: 0.013158
+10 epoches 2139 took 17.167285s
+   train loss: 0.002361
+   train auc: 0.516739
+   train aupr: 0.021161
+10 epoches 2149 took 17.046468s
+   train loss: 0.001226
+   train auc: 0.487323
+   train aupr: 0.013047
+10 epoches 2159 took 16.646375s
+   train loss: 0.001218
+   train auc: 0.522607
+   train aupr: 0.026641
+10 epoches 2169 took 16.732215s
+   train loss: 0.001452
+   train auc: 0.487639
+   train aupr: 0.017104
+10 epoches 2179 took 17.657530s
+   train loss: 0.001476
+   train auc: 0.505185
+   train aupr: 0.027473
+10 epoches 2189 took 16.716691s
+   train loss: 0.000962
+   train auc: 0.481426
+   train aupr: 0.017383
+10 epoches 2199 took 16.598789s
+   train loss: 0.000819
+   train auc: 0.492410
+   train aupr: 0.011278
+10 epoches 2209 took 18.177546s
+   train loss: 0.001109
+   train auc: 0.478684
+   train aupr: 0.014927
+10 epoches 2219 took 17.288919s
+   train loss: 0.000755
+   train auc: 0.515164
+   train aupr: 0.014623
+10 epoches 2229 took 16.921813s
+   train loss: 0.001212
+   train auc: 0.483875
+   train aupr: 0.016222
+10 epoches 2239 took 16.851076s
+   train loss: 0.001113
+   train auc: 0.493397
+   train aupr: 0.013059
+10 epoches 2249 took 16.970448s
+   train loss: 0.000889
+   train auc: 0.508240
+   train aupr: 0.017142
+10 epoches 2259 took 17.468023s
+   train loss: 0.001110
+   train auc: 0.500227
+   train aupr: 0.014488
+10 epoches 2269 took 16.389585s
+   train loss: 0.001134
+   train auc: 0.510281
+   train aupr: 0.016086
+10 epoches 2279 took 16.336233s
+   train loss: 0.001265
+   train auc: 0.496920
+   train aupr: 0.020319
+10 epoches 2289 took 16.706902s
+   train loss: 0.001142
+   train auc: 0.510268
+   train aupr: 0.018856
+10 epoches 2299 took 17.241233s
+   train loss: 0.000983
+   train auc: 0.500696
+   train aupr: 0.017847
+10 epoches 2309 took 16.771393s
+   train loss: 0.001237
+   train auc: 0.490491
+   train aupr: 0.012147
+10 epoches 2319 took 17.214526s
+   train loss: 0.000863
+   train auc: 0.505468
+   train aupr: 0.028019
+10 epoches 2329 took 18.045331s
+   train loss: 0.001864
+   train auc: 0.490715
+   train aupr: 0.020489
+10 epoches 2339 took 16.731173s
+   train loss: 0.001178
+   train auc: 0.510430
+   train aupr: 0.019566
+10 epoches 2349 took 17.149116s
+   train loss: 0.000749
+   train auc: 0.529245
+   train aupr: 0.013585
+10 epoches 2359 took 16.884316s
+   train loss: 0.000950
+   train auc: 0.506576
+   train aupr: 0.013093
+10 epoches 2369 took 18.983808s
+   train loss: 0.001558
+   train auc: 0.500483
+   train aupr: 0.018503
+10 epoches 2379 took 16.661103s
+   train loss: 0.000988
+   train auc: 0.503249
+   train aupr: 0.022305
+10 epoches 2389 took 16.912201s
+   train loss: 0.001299
+   train auc: 0.505732
+   train aupr: 0.008823
+10 epoches 2399 took 16.887978s
+   train loss: 0.001224
+   train auc: 0.498638
+   train aupr: 0.012694
+10 epoches 2409 took 17.048316s
+   train loss: 0.001233
+   train auc: 0.480326
+   train aupr: 0.016300
+10 epoches 2419 took 17.323488s
+   train loss: 0.000766
+   train auc: 0.507730
+   train aupr: 0.029606
+10 epoches 2429 took 16.383087s
+   train loss: 0.000998
+   train auc: 0.496839
+   train aupr: 0.010996
+10 epoches 2439 took 16.985934s
+   train loss: 0.001200
+   train auc: 0.486025
+   train aupr: 0.017887
+10 epoches 2449 took 17.017394s
+   train loss: 0.000934
+   train auc: 0.493186
+   train aupr: 0.016212
+10 epoches 2459 took 16.330517s
+   train loss: 0.001412
+   train auc: 0.505343
+   train aupr: 0.020843
+10 epoches 2469 took 17.602883s
+   train loss: 0.000978
+   train auc: 0.510464
+   train aupr: 0.041354
+10 epoches 2479 took 16.787710s
+   train loss: 0.001064
+   train auc: 0.501764
+   train aupr: 0.012153
+10 epoches 2489 took 16.587051s
+   train loss: 0.001001
+   train auc: 0.515731
+   train aupr: 0.021910
+10 epoches 2499 took 17.882960s
+   train loss: 0.000946
+   train auc: 0.494850
+   train aupr: 0.010885
+10 epoches 2509 took 16.824211s
+   train loss: 0.000817
+   train auc: 0.495021
+   train aupr: 0.017678
+10 epoches 2519 took 16.939721s
+   train loss: 0.001000
+   train auc: 0.480756
+   train aupr: 0.018947
+10 epoches 2529 took 17.307190s
+   train loss: 0.001177
+   train auc: 0.472176
+   train aupr: 0.023043
+10 epoches 2539 took 17.540358s
+   train loss: 0.001498
+   train auc: 0.491490
+   train aupr: 0.027763
+10 epoches 2549 took 16.769802s
+   train loss: 0.000980
+   train auc: 0.497906
+   train aupr: 0.015648
+10 epoches 2559 took 17.431934s
+   train loss: 0.000604
+   train auc: 0.497477
+   train aupr: 0.013315
+10 epoches 2569 took 17.035903s
+   train loss: 0.000924
+   train auc: 0.494759
+   train aupr: 0.013713
+10 epoches 2579 took 18.847553s
+   train loss: 0.000681
+   train auc: 0.487714
+   train aupr: 0.017443
+10 epoches 2589 took 17.154911s
+   train loss: 0.001351
+   train auc: 0.498844
+   train aupr: 0.010452
+10 epoches 2599 took 16.773955s
+   train loss: 0.001038
+   train auc: 0.491564
+   train aupr: 0.019935
+10 epoches 2609 took 17.263516s
+   train loss: 0.000725
+   train auc: 0.505260
+   train aupr: 0.020062
+10 epoches 2619 took 17.269559s
+   train loss: 0.000836
+   train auc: 0.500457
+   train aupr: 0.021977
+10 epoches 2629 took 17.060661s
+   train loss: 0.001608
+   train auc: 0.504390
+   train aupr: 0.016644
+10 epoches 2639 took 17.452559s
+   train loss: 0.000791
+   train auc: 0.484937
+   train aupr: 0.023677
+10 epoches 2649 took 16.302545s
+   train loss: 0.000998
+   train auc: 0.504466
+   train aupr: 0.011824
+10 epoches 2659 took 16.361981s
+   train loss: 0.000697
+   train auc: 0.492981
+   train aupr: 0.022270
+10 epoches 2669 took 16.813146s
+   train loss: 0.000826
+   train auc: 0.492620
+   train aupr: 0.008514
+10 epoches 2679 took 17.228182s
+   train loss: 0.000582
+   train auc: 0.496608
+   train aupr: 0.020505
+10 epoches 2689 took 17.209115s
+   train loss: 0.000952
+   train auc: 0.494511
+   train aupr: 0.040540
+10 epoches 2699 took 17.465743s
+   train loss: 0.000568
+   train auc: 0.515678
+   train aupr: 0.016550
+10 epoches 2709 took 16.674758s
+   train loss: 0.000470
+   train auc: 0.482846
+   train aupr: 0.017076
+10 epoches 2719 took 17.029306s
+   train loss: 0.000871
+   train auc: 0.498358
+   train aupr: 0.029057
+10 epoches 2729 took 16.479020s
+   train loss: 0.000844
+   train auc: 0.513220
+   train aupr: 0.014316
+10 epoches 2739 took 17.290750s
+   train loss: 0.000582
+   train auc: 0.486454
+   train aupr: 0.021550
+10 epoches 2749 took 17.007245s
+   train loss: 0.000827
+   train auc: 0.479697
+   train aupr: 0.015001
+10 epoches 2759 took 16.681770s
+   train loss: 0.000679
+   train auc: 0.499061
+   train aupr: 0.019833
+10 epoches 2769 took 17.151466s
+   train loss: 0.000578
+   train auc: 0.488570
+   train aupr: 0.032688
+10 epoches 2779 took 17.083251s
+   train loss: 0.031739
+   train auc: 0.523988
+   train aupr: 0.013128
+10 epoches 2789 took 16.983858s
+   train loss: 0.002329
+   train auc: 0.552043
+   train aupr: 0.014994
+10 epoches 2799 took 16.970559s
+   train loss: 0.001053
+   train auc: 0.490650
+   train aupr: 0.021151
+10 epoches 2809 took 17.314909s
+   train loss: 0.001171
+   train auc: 0.490505
+   train aupr: 0.015019
+10 epoches 2819 took 16.656130s
+   train loss: 0.001198
+   train auc: 0.529348
+   train aupr: 0.019185
+10 epoches 2829 took 18.002995s
+   train loss: 0.000391
+   train auc: 0.498944
+   train aupr: 0.020080
+10 epoches 2839 took 17.995469s
+   train loss: 0.000560
+   train auc: 0.501274
+   train aupr: 0.019420
+10 epoches 2849 took 16.825712s
+   train loss: 0.000436
+   train auc: 0.488297
+   train aupr: 0.020325
+10 epoches 2859 took 16.922447s
+   train loss: 0.000485
+   train auc: 0.483532
+   train aupr: 0.020633
+10 epoches 2869 took 16.775755s
+   train loss: 0.000703
+   train auc: 0.515085
+   train aupr: 0.009667
+10 epoches 2879 took 16.629491s
+   train loss: 0.000357
+   train auc: 0.483896
+   train aupr: 0.020858
+10 epoches 2889 took 17.673821s
+   train loss: 0.000521
+   train auc: 0.503055
+   train aupr: 0.015789
+10 epoches 2899 took 17.019841s
+   train loss: 0.000406
+   train auc: 0.500550
+   train aupr: 0.015228
+10 epoches 2909 took 17.281988s
+   train loss: 0.000251
+   train auc: 0.509617
+   train aupr: 0.029461
+10 epoches 2919 took 17.015752s
+   train loss: 0.000488
+   train auc: 0.482973
+   train aupr: 0.015602
+10 epoches 2929 took 16.630551s
+   train loss: 0.000476
+   train auc: 0.487362
+   train aupr: 0.022464
+10 epoches 2939 took 16.907949s
+   train loss: 0.000439
+   train auc: 0.505567
+   train aupr: 0.028627
+10 epoches 2949 took 16.891782s
+   train loss: 0.000644
+   train auc: 0.463839
+   train aupr: 0.022070
+10 epoches 2959 took 16.392730s
+   train loss: 0.000465
+   train auc: 0.532601
+   train aupr: 0.010841
+10 epoches 2969 took 17.130795s
+   train loss: 0.000428
+   train auc: 0.520025
+   train aupr: 0.027995
+10 epoches 2979 took 16.927940s
+   train loss: 0.000484
+   train auc: 0.484728
+   train aupr: 0.026256
+10 epoches 2989 took 17.126364s
+   train loss: 0.000473
+   train auc: 0.469203
+   train aupr: 0.027289
+10 epoches 2999 took 17.765112s
+   train loss: 0.000456
+   train auc: 0.484140
+   train aupr: 0.008859
+the 3000 epoch , the model has been saved successfully
